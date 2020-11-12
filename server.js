@@ -1,25 +1,32 @@
 const express = require('express')
 const mongoose = require('mongoose')
+const path = require('path');
 const ShortUrl = require('./models/shortUrl')
 const app = express()   
 require('dotenv').config()  
-//mongodb://localhost/urlShortener
+
 mongoose.connect(process.env.MONGO_URL, {
   useNewUrlParser: true, useUnifiedTopology: true
 })
 
+app.use(express.static( path.join(__dirname, "public")))
 app.set('view engine', 'ejs')
 app.use(express.urlencoded({ extended: false }))
 
-app.get('/', async (req, res) => {
+
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname,"public","index.html"));
+})
+
+app.get('/url-shortener', async (req, res) => {
   const shortUrls = await ShortUrl.find()
-  res.render('index', { shortUrls: shortUrls })
+  res.render('url-shortener.ejs', { shortUrls: shortUrls })
 })
 
 app.post('/shortUrls', async (req, res) => {
   await ShortUrl.create({ full: req.body.fullUrl })
 
-  res.redirect('/')
+  res.redirect('/url-shortener')
 })
 
 app.get('/:shortUrl', async (req, res) => {
