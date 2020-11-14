@@ -297,3 +297,77 @@ footer > div{
     margin-left: 10px;
 }
 }
+
+/*URL shortener*/
+.url-short .heading{
+    text-align: center;
+    font-size: 50px;
+}
+.url-short form{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+}
+.url-short form input{
+    padding: 8px 10px;
+    font-size: 20px;
+    width: 400px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.url-short form button{
+    border-radius: 5px;
+    font-size: 22px;
+    padding: 8px;
+    background-color: #E9F2F9;
+    color: #4C638A;
+    font-weight: 700;
+    font-family: 'sitka-display', serif;
+    cursor: pointer;
+}
+.url-short table{
+    margin: auto;
+    padding-bottom: 30px;
+}
+.url-short table thead{
+    background: #9DBEED;
+    font-size: 18px;
+    font-family: 'sitka-display', serif;
+}
+.url-short table thead th{
+    padding: 8px;
+    border-radius: 10px 10px 0px 0px;
+}
+.url-short table tbody{
+    background-color: white;
+}
+.url-short table tbody td{
+    color: #528DDF;
+    padding: 5px;
+    font-size: 17px;
+    max-width: 235px;
+    word-break: break-word;
+}
+.url-short table tbody td#clicks{
+    color: black;
+    text-align: center;
+    font-size: 18px;
+}
+@media only screen and (max-width: 768px){
+    .url-short .heading {
+        font-size: 42px;
+        line-height: 40px;
+    }
+    .url-short form input {
+        padding: 6px 3px;
+        font-size: 16px;
+        width: 205px;
+        margin-right: 5px;
+    }
+    .url-short form button {
+        font-size: 20px;
+        padding: 6px;
+    }
+}
