@@ -314,10 +314,12 @@ footer > div{
     padding: 8px 10px;
     font-size: 20px;
     width: 400px;
+    border: 1.6px solid black;
     border-radius: 5px;
     margin-right: 10px;
 }
 .url-short form button{
+    border: 1.6px solid black;
     border-radius: 5px;
     font-size: 22px;
     padding: 8px;
@@ -332,11 +334,11 @@ footer > div{
     padding-bottom: 30px;
 }
 .url-short table thead{
-    background: #9DBEED;
     font-size: 18px;
     font-family: 'sitka-display', serif;
 }
 .url-short table thead th{
+    background: #9DBEED;
     padding: 8px;
     border-radius: 10px 10px 0px 0px;
 }
