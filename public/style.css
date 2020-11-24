@@ -40,6 +40,10 @@ header .logo{
     font-size: 50px;
     color: #2755A2;
 }
+header .logo img{
+    width: 170px;
+    margin-top: 10px;
+}
 header nav{
     position: fixed;
     top: 35px;
@@ -112,6 +116,10 @@ header #nav-check:checked ~ label nav div:nth-child(3){
     display: none;
 }
 @media only screen and (max-width: 768px){
+    header .logo img{
+        width: 150px;
+        margin-top: 0px;
+    }
     header .nav-links{
         width: 250px;
     }
