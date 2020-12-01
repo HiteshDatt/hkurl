@@ -71,7 +71,7 @@ header .nav-links{
     top: 0px;
     right: -400px;
     z-index: 98;
-    background-color: #663399;
+    background-color: #2755A2;
     transition: all .4s ease;
     display: flex;
     flex-direction: column;
@@ -89,7 +89,7 @@ header .nav-links > div{
     margin: 20px 0px;
 }
 header .nav-links > div a{
-    color: #663399;
+    color: #3D5580;
 }
 header #nav-check{
     display: none;
