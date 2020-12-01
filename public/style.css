@@ -313,10 +313,12 @@ footer > div{
 }
 .url-short form{
     text-align: center;
+    margin: 35px;
+}
+.url-short form .form-req{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 35px;
 }
 .url-short form input{
     padding: 8px 10px;
@@ -326,6 +328,13 @@ footer > div{
     border-radius: 5px;
     margin-right: 10px;
 }
+.url-short form input#optn{
+    margin-left: -10px;
+    margin-top: 6px;
+    padding: 6px 8px;
+    font-size: 16px;
+    width: 300px;
+}
 .url-short form button{
     border: 1.6px solid black;
     border-radius: 5px;
@@ -333,9 +342,13 @@ footer > div{
     padding: 8px;
     background-color: #E9F2F9;
     color: #4C638A;
+    box-shadow: 1px 2px 1px 1px #3d5580;
     font-weight: 700;
     font-family: 'sitka-display', serif;
     cursor: pointer;
+}
+.url-short form button:active{
+    box-shadow: 0px 0px;
 }
 .url-short table{
     margin: auto;
@@ -375,6 +388,13 @@ footer > div{
         font-size: 16px;
         width: 205px;
         margin-right: 5px;
+    }
+    .url-short form input#optn{
+        padding: 4px 3px;
+        font-size: 14px;
+        width: 146px;
+        margin-left: -37px;
+        margin-top: 5px;
     }
     .url-short form button {
         font-size: 20px;
