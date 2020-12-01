@@ -46,7 +46,7 @@ header .logo img{
 }
 header nav{
     position: fixed;
-    top: 35px;
+    top: 30px;
     right: 5%;
     z-index: 99;
     cursor: pointer;
@@ -319,6 +319,7 @@ footer > div{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 3px;
 }
 .url-short form input{
     padding: 8px 10px;
@@ -328,12 +329,16 @@ footer > div{
     border-radius: 5px;
     margin-right: 10px;
 }
+.url-short form span{
+    margin-left: -61px;
+    font-size: 21px;
+}
 .url-short form input#optn{
-    margin-left: -10px;
+    margin-left: 2px;
     margin-top: 6px;
     padding: 6px 8px;
     font-size: 16px;
-    width: 300px;
+    width: 270px;
 }
 .url-short form button{
     border: 1.6px solid black;
@@ -389,11 +394,15 @@ footer > div{
         width: 205px;
         margin-right: 5px;
     }
+    .url-short form span{
+        margin-left: -91px;
+        font-size: 18px;
+    }
     .url-short form input#optn{
-        padding: 4px 3px;
-        font-size: 14px;
-        width: 146px;
-        margin-left: -37px;
+        padding: 4px 1px;
+        font-size: 13.5px;
+        width: 131px;
+        margin-left: 1px;
         margin-top: 5px;
     }
     .url-short form button {

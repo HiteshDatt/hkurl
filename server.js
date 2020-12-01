@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const path = require('path');
+const shortId = require('shortid')
 const ShortUrl = require('./models/shortUrl')
 const app = express()   
 require('dotenv').config()  
@@ -24,7 +25,7 @@ app.get('/url-shortener', async (req, res) => {
 })
 
 app.post('/shortUrls', async (req, res) => {
-  await ShortUrl.create({ full: req.body.fullUrl, short: req.body.shortUrl })
+  await ShortUrl.create({ full: req.body.fullUrl, short: req.body.shortUrl||shortId.generate().substring(0,6) })
 
   res.redirect('/url-shortener')
 })
