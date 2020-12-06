@@ -56,6 +56,7 @@ header nav div{
     width: 35px;
     background-color: white;
     border: 2px solid black;
+    border-radius: 3px;
     margin-bottom: 2px;
 }
 header nav div:first-child{
