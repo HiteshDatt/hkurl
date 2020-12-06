@@ -396,7 +396,7 @@ footer > div{
         margin-right: 5px;
     }
     .url-short form span{
-        margin-left: -91px;
+        margin-left: -15px;
         font-size: 18px;
     }
     .url-short form input#optn{
@@ -404,10 +404,12 @@ footer > div{
         font-size: 13.5px;
         width: 131px;
         margin-left: 1px;
-        margin-top: 5px;
+        margin-top: 10px;
     }
     .url-short form button {
         font-size: 20px;
         padding: 6px;
+        padding-top: 8px;
+        border: 1px solid black;
     }
 }
