@@ -4,7 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="style.css" type="text/css"/>
+  <% if(invalidUrl){ %>
+    <link rel="stylesheet" href="../style.css" type="text/css"/>
+  <% } else {%>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+  <% } %>
   <title>URL shortener | HK urls</title>
 </head>
 <body>
@@ -12,7 +16,13 @@
   <div class="container">
 
   <header>
-      <div class="logo"> <a href="/"><img src="logo.png" alt="logo"></a></div>
+      <div class="logo"> <a href="/">
+        <% if(invalidUrl){ %>
+          <img src="../logo.png" alt="logo">
+        <% } else {%>
+          <img src="logo.png" alt="logo">
+        <% } %>
+      </a></div>
       <input type="checkbox" id="nav-check">
       <label for="nav-check">
       <nav><div></div><div></div><div></div></nav>
@@ -56,6 +66,10 @@
   </div>
   <footer><div>All rights reserved &copy; 2020 HK URLs</div>
   </footer>
+
+  <% if(invalidUrl){ %>
+    <div style="position: absolute;width: fit-content;margin-left: auto;margin-right: auto;top: 50%;left: 0;right: 0;text-align: center;font-size: 30px;background: blue;">THE SHORT URL ENTERED IS ALREADY TAKEN(testing)</div>
+  <% } %>  
 </div>
 </body>
 </html>
