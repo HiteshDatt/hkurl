@@ -47,7 +47,7 @@ header .logo img{
 header nav{
     position: fixed;
     top: 30px;
-    right: 5%;
+    margin-left: -40px;
     z-index: 99;
     cursor: pointer;
 }
@@ -412,4 +412,49 @@ footer > div{
         padding-top: 8px;
         border: 1px solid black;
     }
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    padding-top: 30vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+ 
+.modal .modal-content {
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 3px;
+    width: 75%;
+    position: relative;
+}
+.modal p{
+    font-family: 'sitka-display';
+    text-align: center;
+}
+.modal .close {
+    color: white;
+    font-size: 32px;
+    font-weight: 600;
+    width: 26px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    position: absolute;
+    top: -28px;
+    right: 0px;
+    background: red;
+    z-index: -1;
+    border-radius: 3px;
+}
+.modal .close:hover, .modal .close:focus {
+   color: #000;
+   cursor: pointer;
 }
