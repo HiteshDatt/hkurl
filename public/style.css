@@ -253,9 +253,11 @@ footer > div{
 .about .founders div{
     text-align: center;
 }
-.about .founders img{
+.about .founders img {
     width: 120px;
+    height: 115px;
     border-radius: 50%;
+    box-shadow: 0px 0px 2px black;
 }
 .about .founders .name{
     font-size: 22px;
